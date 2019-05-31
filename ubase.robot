@@ -1004,7 +1004,7 @@ Login
     ${return_value}=    Run keyword    ubase.Отримати інформацію з пропозиції шодо ${field}
     [Return]    ${return_value}
 
-ubase.Отримати інформацію з пропозиції шодо value.amount
+Отримати інформацію з пропозиції шодо value.amount
     ${return_value}=    Отримати текст    id=bids-value_amount
     ${return_value}=    Convert to number    ${return_value}
     [Return]    ${return_value}
