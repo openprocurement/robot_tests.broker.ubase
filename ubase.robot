@@ -291,7 +291,7 @@ Login
     [Arguments]    ${username}  ${tender_uaid}
     Switch Browser    ${BROWSER_ALIAS}
     Sleep    3
-    Натиснути    id=home-link
+    Go to    ${USERS.users['${username}'].default_page}
     Натиснути    id = auctionssearch-main_search
     Input Text    id = auctionssearch-main_search    ${tender_uaid}
     Натиснути    id = public-search-btn
